@@ -61,6 +61,7 @@ class TemplateRunner(Runner):
             bool: True if the simulation is successful, False otherwise.
 
         """
+        # Initialize success flag
         success = False
 
         # Change to run_dir if needed
@@ -74,6 +75,7 @@ class TemplateRunner(Runner):
 
         # Process output, for example
         # success = self.parser.write_summary(run_dir, params)
+        success = True  # Placeholder for actual success condition
 
         # Cleanup files
         self.parser.clean_output_files(run_dir)
