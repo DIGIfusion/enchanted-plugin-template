@@ -20,9 +20,6 @@ class TemplateParser(Parser):
 
     """
 
-    def __init__(self):
-        super().__init__()
-
     def write_input_file(self, params: dict, run_dir: str):
         """
         Writes input file.
