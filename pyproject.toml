@@ -8,7 +8,7 @@ requires-python = ">=3.10"
 description = "Template for development of plugins for Enchanted surrogates."
 readme = "README.md"
 authors = [
-    {name = "Name", email = "Email"},
+    {name = "Name", email = "template@example.com"},
 ]
 license = {text = "MIT"}
 
