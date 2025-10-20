@@ -63,21 +63,25 @@ class TemplateRunner(Runner):
         """
         # Initialize success flag
         success = False
-
         # Change to run_dir if needed
         # os.chdir(run_dir)
 
         # Call parser to write input file
         # self.parser.write_input_file()
 
+        output = {}
         # Execute code, for example:
-        # subprocess.call([self.executable_path])
+        try: 
+            subprocess.call([self.executable_path])
+            # Process output, for example
+            # success = self.parser.write_summary(run_dir, params)
+            success = True  # Placeholder for actual success condition
+            # Cleanup files
 
-        # Process output, for example
-        # success = self.parser.write_summary(run_dir, params)
-        success = True  # Placeholder for actual success condition
+        except Exception as exe:
+            output['error'] = exe
+            success = False
 
-        # Cleanup files
         self.parser.clean_output_files(run_dir)
-
-        return {'success': success}
+        output['success'] = success
+        return output
