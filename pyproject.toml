@@ -4,7 +4,7 @@ version = "0.1.0"
 dependencies = [
     "enchanted_surrogates",
     "numpy",]
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 description = "Template for development of plugins for Enchanted surrogates."
 readme = "README.md"
 authors = [
