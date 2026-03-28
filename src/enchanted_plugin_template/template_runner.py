@@ -4,6 +4,9 @@ import numpy as np
 from enchanted_surrogates.runners.base_runner import Runner
 from .template_parser import TemplateParser
 
+# Use the logger for printing
+from enchanted_surrogates.utils.logger import get_logger
+log = get_logger(__name__)
 
 class TemplateRunner(Runner):
     """
