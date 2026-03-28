@@ -2,6 +2,9 @@
 """
 from enchanted_surrogates.parsers.base_parser import Parser
 
+# Use the logger for printing
+from enchanted_surrogates.utils.logger import get_logger
+log = get_logger(__name__)
 
 class TemplateParser(Parser):
     """An I/O parser
